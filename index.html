@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> Scoreboard
+  </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container-fluid p-0 flex-fill">
+
+  <main class="container-fluid bg-img img-fluid">
+    <section class="row g-5">
+
+      <!-- SECTION NavButtons -->
+      <div class="col-md-12 text-end">
+        <button class="btn btn-danger btn-lg m-4" onclick="reset()"> RESET</button>
+        <button class="btn btn-danger btn-lg m-4" onclick="addPlayer()"> ADD PLAYER</button>
+      </div>
+      <div class="col-md-12">
+        <section class="row justify-content-center align-items-center p-3">
+
+          <!-- SECTION Earth score -->
+          <div class="col text-center ">
+            <section class="row gy-5">
+              <div class="col-12">
+                <H1 class="text-light">Earth</H1>
+                <div class="card shadow p-5 opacity-25">
+                  <p id="earth-Score" class="fnt-lg">
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-success btn-lg" onclick="earthPlanetDestroyed()">
+                  Planet Destroyed +1
+                </button>
+              </div>
+              <div class="col-12">
+                <button id="earthSolarDestroyed" class="btn btn-primary btn-lg" onclick="earthSystemDestroyed()">
+                  Solar System Destroyed +5
+                </button>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-success btn-lg" onclick="earthPlanetColonized()">
+                  Planet Colonized -1
+                </button>
+              </div>
+              <div class="col-12">
+                <button id="earthSolarDestroyed" class="btn btn-primary btn-lg" onclick="earthSystemColonized()">
+                  Solar System Colonized -5
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <!-- SECTION Buggers score -->
+          <div class="col text-center">
+            <section class="row gy-5">
+              <div class="col-12">
+                <H1 class="text-light">Buggers</H1>
+                <div class="card shadow p-5 opacity-25">
+                  <p id="bugger-Score" class="fnt-lg">
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <button id="buggerPlanedDestroyed" class="btn btn-success btn-lg" onclick="buggerPlanetDestroyed()">
+                  Planet Destroyed +1
+                </button>
+              </div>
+              <div class="col-12">
+                <button id="buggerSolarDestroyed" class="btn btn-primary btn-lg" onclick="buggerSystemDestroyed()">
+                  Solar System Destroyed +5
+                </button>
+              </div>
+              <div class="col-12">
+                <button id="buggerPlanedDestroyed" class="btn btn-success btn-lg" onclick="buggerPlanetColonized()">
+                  Planet Colonized -1
+                </button>
+              </div>
+              <div class="col-12">
+                <button id="buggerSolarDestroyed" class="btn btn-primary btn-lg" onclick="buggerSystemColonized()">
+                  Solar System Colonized -5
+                </button>
+              </div>
+            </section>
+          </div>
+
+
+        </section>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="app.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

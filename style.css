@@ -1,0 +1,9 @@
+.bg-img {
+  background-image: url(https://www.illustratedfiction.com/files/media/david-levy-simulation-room-a-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fnt-lg {
+  font-size: 100pt;
+}
